@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonIsik"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/michroma"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Işık sensörü"
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBasinc"
+        app:layout_constraintStart_toStartOf="@+id/buttonBasinc"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBasinc" />
+
+    <Button
+        android:id="@+id/buttonRotasyon"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/michroma"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Lokal rotasyon sensörü "
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCompass"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCompass"
+        app:layout_constraintStart_toStartOf="@+id/buttonCompass" />
+
+    <Button
+        android:id="@+id/buttonCompass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/michroma"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Manyetik alan sensörü"
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBasinc"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBasinc"
+        app:layout_constraintStart_toStartOf="@+id/buttonBasinc" />
+
+    <Button
+        android:id="@+id/buttonBasinc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/michroma"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Yer çekimi sensörü"
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonUzaklik"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/michroma"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Uzaklık sensörü "
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCompass"
+        app:layout_constraintStart_toStartOf="@+id/buttonCompass"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIsik" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="1080dp"
+        android:layout_height="1920dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sensorbckgrnd" />
+
+    <ImageView
+        android:id="@+id/imageViewalpha"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@null" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
